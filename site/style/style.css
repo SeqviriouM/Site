@@ -1,0 +1,17 @@
+
+
+.navbar-wrapper {
+
+	margin-top: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+
+.navbar-wrapper .container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
