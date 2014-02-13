@@ -8,11 +8,18 @@
 
     	<title>My Site</title>
 
-		<link href="./libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="./libraries/js/carousel.js" rel="stylesheet">
-		<link href="./style/style.css" rel="stylesheet" type="text/css" />
+		<link href="./libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
 
+  	<script type="text/javascript" src="./libraries/js/carousel/carousel.js"></script>
+    
+    <script type="text/javascript" src="./libraries/js/jsanim/jsAnim.js"></script>
+    
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+    <script type="text/javascript" src="./libraries/js/main.js"></script>
+
+
     <!-- Скрипт для фиксирования бокового меню на определенном уровне после прокрутки шарки -->
     <script>
       var h_hght = 500; // высота шапки
@@ -33,15 +40,15 @@
       });
 
     </script>
-		
+
 	</head>
-	<body>
-    
+	<body onload="animate_header()">
+
     <!-- Менюшка сверху -->
     <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation" id="header" >
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -130,7 +137,7 @@
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
+          <h1 class="page-header"  id="header">Dashboard</h1>
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
