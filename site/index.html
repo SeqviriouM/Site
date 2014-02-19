@@ -84,15 +84,40 @@
             <li><a href="#contact">Contact</a></li>
             </ul>
             <form class="navbar-form navbar-right">
-              <input type="text" class="form-control" placeholder="Login">
-              <input type="text" class="form-control" placeholder="Password">
-              <button type="submit" class="btn btn-success">Sign in</button>
+              <button class="btn btn-success" data-toggle="modal" data-target="#SignIn" >Sign in</button>
             </form>
           </div>
         </div>
       </div>
   	</div>
 
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel" style="color:red;">Autorization</h4>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon">Login</span>
+              <input type="text" class="form-control">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">Password</span>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" style="float:left">Close</button>
+            <button type="button" class="btn btn-success">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
       
   		 <!-- Carousel слайды
@@ -110,7 +135,7 @@
             <div class="carousel-caption">
               <h1>Registration</h1>
               <p>Note: If you're not registred this page are close for you. For future activity please sign up. Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <a href="#" class="button glow  button-circle button-primary" id="sign">Sign up</a>
+              <a href="#" class="button glow  button-circle button-primary">Sign up</a>
               <br>
               <br>
             </div>
@@ -130,6 +155,7 @@
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
+
 
 
 

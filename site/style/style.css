@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1;
   padding-left: 25px;
   padding-right: 25px;
 
@@ -74,7 +74,6 @@
   color: #fff;
   background-color: #428bca;
 }
-
 
 
 
